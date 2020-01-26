@@ -41,7 +41,7 @@ Crie uma função com as seguintes características:
 3. O retorno da função deve ser a multiplicação dos 3 argumentos, somando `2` ao resultado da multiplicação.
 */
 function multiplicacao(x,y,z){
-... if(x== null || y == null || z == null){
+... if(x=== undefined || y === undefined || z === undefined){
 ..... return 'Preencha todos os valores corretamente!';}
 ... return (x*y*z)+2;
 ... }
@@ -68,15 +68,15 @@ Crie uma função com as seguintes características:
 6. E ainda, se nenhuma das condições acima forem atendidas, retorne `null`.
 */
 function exercicio(x,y,z){
-... if(x != null && y != null && z != null){
+... if(x !== undefined && y !== undefined && z !== undefined){
 ..... return (x*y)/z;
-..... } else if(x != null || y != null || z != null){
+..... } else if(x !== undefined || y !== undefined || z !== undefined){
 ..... var result = 0;
-..... result += x != null ? x: 0;
-..... result += y != null ? y: 0;
-..... result += z != null ? z: 0;
+..... result += x !== undefined ? x: 0;
+..... result += y !== undefined ? y: 0;
+..... result += z !== undefined ? z: 0;
 ..... return result;
-..... }if(x == null && y == null && z == null){
+..... }if(x === undefined && y === undefined && z === undefined){
 ..... return false;
 ..... }
 ... return null}
