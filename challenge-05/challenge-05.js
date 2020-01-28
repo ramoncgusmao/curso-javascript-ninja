@@ -14,7 +14,7 @@ function myFunction(arg){
 /*
 Imprima o segundo índice do array retornado pela função criada acima.
 */
-console.log(myFunction(arr));
+console.log(myFunction(arr)[1]);
 
 /*
 Crie uma função que receba dois parâmetros: o primeiro, um array de valores; e o
@@ -62,11 +62,8 @@ function book(bookName){
             dom_quixote: {quantidadePaginas: 80, autor: 'nao sei', editora: 'luminous'}
     }
 
-    if(bookName === undefined){
-        return books;
-    }
-
-    return books[bookName];
+    return !bookName ? books :  books[bookName];
+    
 }
 
 /*
