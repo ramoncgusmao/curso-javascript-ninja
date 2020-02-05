@@ -37,10 +37,12 @@
    Após o loop, mostre a frase:
    'The person has [COUNTER] properties'
    */
+  var counter = 0;
  for( prop in person){
     console.log(`The ${prop} of person is ${person[prop]}`);
- }
- console.log(`The person has ${person.length} properties`);
+    counter++;
+  }
+ console.log(`The person has ${Object.keys(person).length} properties`);
   
   /*
   Crie uma função chamada `moreThan`, que vai verificar se a pessoa (objeto
